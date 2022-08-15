@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style>body {
+    background: rgb(67, 67, 67);
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+
+.actions {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+div {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.root {
+    width: 75%;
+    margin: auto;
+}
+
+.container {
+    border-radius: 14px 14px 5px 5px;
+    background: white;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px 0px rgb(0, 0, 0);
+}
+
+.name:hover {
+    padding-left: 13px;
+}
+
+.name {
+    padding: 10px;
+    background: rgb(223, 223, 223);
+    transition: all 0.5s;
+}
+
+.content {
+    overflow: hidden;
+    padding: 7px;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #e9e9e9;
+box-shadow: inset 0 0 5px 0 black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-color: rgb(150, 150, 150);
+box-shadow: inset 0 0 3px 0 black;
+border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background-color: rgb(101, 101, 101);
+}
+
+
+
+
+
+
+
+
+button {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    border: 1px solid black;
+    /* box-shadow: 3px 3px 1px 0px black; */
+    /*box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;*/
+    /*color: green;*/
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    /*font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;*/
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  button:hover {
+    /* border: 1px solid black; */
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }</style>
+</head>
+<body><div class="root"><div class="actions">
+<button class="collapseall">CollapseAll</button>
+<button class="expandall">ExpandAll</button>
+<button class="clearlocalspace">ClearLocalspace</button>
+</div>
+<div class="container depth0">
+	<div class="name" id="name0">C:\Users\Haier\Documents\Awit\Grade12\q1genbio\notes</div>
+	<div class="content" id="content0">
+		<div class="container depth1">
+			<div class="name" id="name1">cell structure</div>
+			<div class="content" id="content1">
+				<div><a href="https://www.youtube.com/watch?v=URUJD5NEXC8" target="_blank">https://www.youtube.com/watch?v=URUJD5NEXC8</a></div>
+				<br></br>
+				<div>smallest living units of an organism</div>
+				<div class="container depth2">
+					<div class="name" id="name2">all cells have 3 things in common</div>
+					<div class="content" id="content2">
+						<div class="container depth3">
+							<div class="name" id="name3">cell membrane</div>
+							<div class="content" id="content3">
+								<div>separates the inside of the cell from the environment</div>
+							</div>
+						</div>
+						<div class="container depth3">
+							<div class="name" id="name4">cytoplasm</div>
+							<div class="content" id="content4">
+								<div>a jelly like fluid</div>
+							</div>
+						</div>
+						<div class="container depth3">
+							<div class="name" id="name5">dna</div>
+							<div class="content" id="content5">
+								<div>a cell's genetic material</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container depth2">
+					<div class="name" id="name6">2 broad category of cells</div>
+					<div class="content" id="content6">
+						<div class="container depth3">
+							<div class="name" id="name7">eukaryotic cell</div>
+							<div class="content" id="content7">
+								<div>have organelles which include the nucleus and other special parts</div>
+								<div>more advanced</div>
+								<div>found on plants and animals</div>
+							</div>
+						</div>
+						<div class="container depth3">
+							<div class="name" id="name8">prokaryotic cell</div>
+							<div class="content" id="content8">
+								<div>no nucleus</div>
+								<div>no organelles</div>
+								<div>have dna but not enclosed in a nucleus</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container depth2">
+					<div class="name" id="name9">organelle "little organ"</div>
+					<div class="content" id="content9">
+						<div>specialized part of a cell with unique jobs</div>
+						<div class="container depth3">
+							<div class="name" id="name10">nucleus</div>
+							<div class="content" id="content10">
+								<div>control center of the cell</div>
+								<div class="container depth4">
+									<div class="name" id="name11">contains the dna</div>
+									<div class="content" id="content11">
+										<div>dna dictates what the cell should do and how it should do it</div>
+										<div class="container depth5">
+											<div class="name" id="name12">chromatin</div>
+											<div class="content" id="content12">
+												<div>tangled spread out form of the dna found inside the nuclear membrane</div>
+											</div>
+										</div>
+										<div>when the cell is ready to divide, dna condenses into chromosome</div>
+									</div>
+								</div>
+								<div class="container depth4">
+									<div class="name" id="name13">nucleolus</div>
+									<div class="content" id="content13">
+										<div class="container depth5">
+											<div class="name" id="name14">where ribosomes are made</div>
+											<div class="content" id="content14">
+												<div>ribosomes synthesize or make proteins</div>
+												<div>outisde the nucleus, ribosomes float around in the cytoplasm</div>
+												<div>can wander freely</div>
+												<div class="container depth6">
+													<div class="name" id="name15">can attach endoplasmic reticulum (ER)</div>
+													<div class="content" id="content15">
+														<div class="container depth7">
+															<div class="name" id="name16">2 types of er</div>
+															<div class="content" id="content16">
+																<div class="container depth8">
+																	<div class="name" id="name17">rough endoplasmic reticulum(rER)</div>
+																	<div class="content" id="content17">
+																		<div>have ribosomes attached to it</div>
+																	</div>
+																</div>
+																<div class="container depth8">
+																	<div class="name" id="name18">smooth endoplasmic reticulum(sER)</div>
+																	<div class="content" id="content18">
+																		<div>no ribosomes</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div>member enclosed passageway for transporting materials such as proteins</div>
+														<div class="container depth7">
+															<div class="name" id="name19">proteins and other material emerge from the ER in small vesicles where the golgi aparatus (golgi body) recieves them</div>
+															<div class="content" id="content19">
+																<div>in the golgi body, they are customized in the way that the cell can use</div>
+																<div class="container depth8">
+																	<div class="name" id="name20">it does this by</div>
+																	<div class="content" id="content20">
+																		<div>molding the proteins into usable shapes</div>
+																		<div>adding materials into it such as lipids or carbohydrates</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container depth4">
+									<div class="name" id="name21">vacuoles</div>
+									<div class="content" id="content21">
+										<div>sack like structures that store different materials</div>
+										<div>in plant cells, it stores water</div>
+										<div class="container depth5">
+											<div class="name" id="name22">in animal cells, there is the lysosomes</div>
+											<div class="content" id="content22">
+												<div class="container depth6">
+													<div class="name" id="name23">the garbage collectors</div>
+													<div class="content" id="content23">
+														<div>take damaged cell parts</div>
+														<div>filled with enzimes to break down the debris</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container depth4">
+									<div class="name" id="name24">mitochondrion</div>
+									<div class="content" id="content24">
+										<div>power house of a cell</div>
+										<div class="container depth5">
+											<div class="name" id="name25">cellular respiration</div>
+											<div class="content" id="content25">
+												<div>the process where mitochondria make atp molecules that provide energy for all cell activities</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container depth4">
+									<div class="name" id="name26">cytoskeleton</div>
+									<div class="content" id="content26">
+										<div>to maintain the shape of the shell</div>
+										<div class="container depth5">
+											<div class="name" id="name27">includes</div>
+											<div class="content" id="content27">
+												<div>thread like microfilaments of proteins</div>
+												<div>microtubules which are thin hollow tubes</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="container depth4">
+									<div class="name" id="name28">chloroplast</div>
+									<div class="content" id="content28">
+										<div>for organisms that are photoautotrophic, can capture sunlight for energy</div>
+										<div>where photosynthesis</div>
+										<div>green 'cos of green pigment called chlorophyll</div>
+									</div>
+								</div>
+								<div class="container depth4">
+									<div class="name" id="name29">cell wall</div>
+									<div class="content" id="content29">
+										<div>plant cells have cell wall outside their cell membranes</div>
+										<div>shape, support, and protect the plant cell</div>
+										<div>animal cells never have a cell wall</div>
+									</div>
+								</div>
+								<div class="container depth4">
+									<div class="name" id="name30">other unique structures</div>
+									<div class="content" id="content30">
+										<div class="container depth5">
+											<div class="name" id="name31">silia</div>
+											<div class="content" id="content31">
+												<div>like in human's respiratory track</div>
+												<div>microscopic hairlike projections that can move in waves</div>
+												<div>helps trap inhaled particles in the air and expells them when you cough</div>
+											</div>
+										</div>
+										<div class="container depth5">
+											<div class="name" id="name32">flagella</div>
+											<div class="content" id="content32">
+												<div>some bacteria has it</div>
+												<div>like a little tail that helps a cell move or propel itself</div>
+												<div>sperm cell is the only human cell that has it</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container depth2">
+					<div class="name" id="name33">summary</div>
+					<div class="content" id="content33">
+						<div>eukaryotic cells: plant and animal cells with a nuceus and membrane-enclosed organelles</div>
+						<div>prokaryotic cells: unicellular organisms without a nucleus or membrane-enclosed organelles</div>
+						<div>all cells have a cell membrane, cytoplasm, and genetic material</div>
+						<div>both plant and animal cells ahve mitochondria</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container depth1">
+			<div class="name" id="name34">introduction to cells: the grand cell tour</div>
+			<div class="content" id="content34">
+				<div><a href="https://www.youtube.com/watch?v=8IlzKri08kk" target="_blank">https://www.youtube.com/watch?v=8IlzKri08kk</a></div>
+				<br></br>
+				<div class="container depth2">
+					<div class="name" id="name35">modern cell theory</div>
+					<div class="content" id="content35">
+						<div>the cell is the smallest living unit in all organisms</div>
+						<div>all living things are made of cells</div>
+						<div>all cells come from other pre-existing cells</div>
+					</div>
+				</div>
+				<div class="container depth2">
+					<div class="name" id="name36">prokaryotes</div>
+					<div class="content" id="content36">
+						<div>archaea</div>
+						<div>bacteria</div>
+					</div>
+				</div>
+				<div class="container depth2">
+					<div class="name" id="name37">eukaryotes</div>
+					<div class="content" id="content37">
+						<div>fungi</div>
+						<div>animals</div>
+						<div>potists</div>
+						<div>plants</div>
+					</div>
+				</div>
+				<div>both prokaryotes and eukaryotes have genetic material, cytoplasm, robosomes, and cell membrans, but prokaryotes have no nucleus, membrane-bound organelles</div>
+				<div>organelles</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div></body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function(){
+    contents = $(".content");
+    for (i=0; i<contents.length; i++) {
+        var content = $(contents[i]);
+        var ishidden = localStorage.getItem('idcontent'+i) === 'true'? true : false;
+        if (ishidden) togglehide(content, 0);
+    }
+});
+
+
+$('.name').click(function(e) {
+    e.stopPropagation();
+    togglehide($(this).next())
+});
+
+
+function togglehide(elem, duration=300) {
+    a = $(elem);
+
+    hidden = a.is(":hidden");
+
+    if (hidden) a.show(duration);
+    else a.hide(duration);
+
+    id = 'id' + a.attr('id')
+    localStorage.setItem(id, !hidden);
+    console.log(id + ": " + localStorage.getItem(id));
+}
+
+
+$('.collapseall').click(function() {
+    all = $('.content');
+    all.each(function(i, e){
+        a = $(e);
+
+        hidden = a.is(":hidden");
+        if (!hidden) togglehide(e);
+    });
+});
+
+$('.expandall').click(function() {
+    all = $('.content');
+    all.each(function(i, e){
+        a = $(e);
+
+        hidden = a.is(":hidden");
+        if (hidden) togglehide(e);
+    });
+});
+
+$('.clearlocalspace').click(function() {
+    localStorage.clear();
+});</script></script>
+</html>

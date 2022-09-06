@@ -1,0 +1,170 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background: #303030;
+}
+
+
+header
+{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.burger
+{
+	display: none;
+}
+.logo 
+{
+	background-image: linear-gradient(to right, #43D29E, #29DEA0, #09FAE6);
+	transition: 0.5s;
+	height: 20vh;
+	width: 100%;
+	font-size: 10vh;
+	display: flex;
+	align-items: center;
+	padding-left: 5vw;
+}
+nav
+{
+	transition: 1s;
+	display: flex;
+	flex-direction: row;
+	background: #611010;
+	width: 100%;
+	height: 11vh;
+	z-index: 1000;
+}
+nav div
+{
+	transition: 1s, background 0.3s, color 0.3s, font-size 0.2s;
+	font-size: 5vh;
+	flex-basis: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav div:hover
+{
+	cursor: pointer;
+}
+.navlinks:hover
+{
+	color: #611010;
+	background: #09FAE6;
+	font-size: 5.3vh;
+}
+@keyframes colorchange
+{
+	0% {color: #00FFFC;}
+	20% {color: #00FFBA;}
+	40% {color: #00FF60;}
+	60% {color: #95FF8A;}
+	80% {color: #D3D6D4;}
+	100% {color: #00FFFC;}
+}
+#navlogo 
+{
+	margin: 0 5vw 0 10vw;
+}
+
+
+header.scroll .logo
+{
+	height: 0;
+	font-size: 0;
+}
+header.scroll #deskopnav
+{
+	height: 7vh;
+}
+header.scroll #deskopnav div
+{
+	font-size: 4.5vh;
+	animation-name: colorchange;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+header.scroll #deskopnav .navlinks:hover
+{
+	font-size: 5vh;
+	background: #606060;
+}
+
+
+@media screen and (max-width: 750px)
+{
+	.logo
+	{
+		display: none;
+	}
+	nav
+	{
+		z-index: -1;
+		transition: all 1s ease;
+		display: flex;
+		background: yellow;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		flex-direction: column;
+		clip-path: circle(0px at -10% -10%);
+	}
+	header
+	{
+		background: white;
+		transition: 0.3s;
+	}
+	.burger
+	{
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		z-index: 5;
+	}
+	.burger div
+	{
+		transition: 1s;
+		width: 30px;
+		height: 4px;
+		margin: 3px;
+		border-radius: 2px;
+		background: black;
+	}
+
+	header.mobilescroll
+	{
+		background: none;
+	}
+	header.mobilescroll .burger div
+	{
+		background: white;
+	}
+
+	nav.open
+	{
+		z-index: 4;
+		clip-path: circle(125vw at 10% 10%);
+	}
+
+
+
+	
+}
+
+
+
+h1
+{
+	font-size: 200px;
+}

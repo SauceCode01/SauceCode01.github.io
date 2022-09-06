@@ -1,0 +1,41 @@
+body 
+{
+	margin: 0;
+	padding: 0;
+}
+
+.menu
+{
+	background-color: red;
+	border: 2px solid yellow;
+}
+
+.menubutton
+{
+	font-size: 20px;
+	cursor: pointer;
+	border: 2px solid black;
+	padding: 5px;
+	margin: 0;
+	width: 100px;
+}
+
+.dropdown
+{
+	display: none;
+	background: yellow;
+	z-index: 1;
+}
+
+.dropdown a:hover
+{
+	background-color: grey;
+	color: white;
+}
+
+.menu:hover .dropdown
+{
+	display: flex;
+	flex-direction: column;
+}
+

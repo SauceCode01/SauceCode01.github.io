@@ -35,4 +35,14 @@
         <p>buhay pa ako - sya</p>
         <p style="color: pink;">kulay pink</p>
     </body>
+<script>
+    var audio = document.createElement('audio');
+var source = document.createElement('source');
+var media = document.getElementById('media');
+media.appendChild(audio);
+audio.appendChild(source);
+source.setAttribute('src', '.\horse.mp3');
+source.setAttribute('type', 'audio/mpeg');
+audio.setAttribute('controls', 'controls');
+</script>
 </html>
